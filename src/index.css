@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +8,25 @@ html,
 body {
   @apply h-screen;
 
+  font-family: "Montserrat", sans-serif;
   background: radial-gradient(
     76.5% 199.93% at 13.43% 16.86%,
     #7b64f1 0%,
     #6244fd 100%
   );
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }
